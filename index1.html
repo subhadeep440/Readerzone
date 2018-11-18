@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+    <head>
+        <title>book store </title>
+        <link type="text/css" href="slide.css" rel="stylesheet">
+        <style>
+        #menu {
+    width: 550px;
+    height: 35px;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #8AD9FF;
+        border-radius: 8px;
+}
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+            audio{
+                visibility: hidden;
+            }
+#menu li { 
+display: inline; 
+padding: 20px; 
+}
+#menu a {
+    text-decoration: none;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+        
+           
+        </style>
+    </head>
+   
+    <body background="pack1.jpg">
+        <div align="center">
+            <table width="1400" height="50">
+                <!--SLIDE -->
+                            <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="subha.jpg" style="width:1400px; height:300px;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="jj.jpg" style="width:1400px; height:300px;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="jj1.jpeg" style="width:1400px; height:300px;">
+  
+</div>
+    <div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="jj2.jpg" style="width:1400px; height:300px;">
+  
+</div>
+   <div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="jj3.jpg" style="width:1400px; height:300px;">
+  
+</div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+                            <!-- END OF SLIDE -->
+
+                <tbody>
+                <tr>
+                    <td height="50" width="1400">
+                    <table height="50" width="1400">
+                        <tbody>
+                                                    <tr>
+                            <td height="50" width="500"><img src="book-xxl.png" height="150" width="150"  style="float:left;"></td>
+                            
+                            <td height="50" width="500">
+                        <table>
+                                <tbody>
+                            
+                            <tr><td height="20" width="400"></td></tr>
+                                    <tr><td  height="100" width="400" style="float:right;">
+                                        <div id='menu'>
+                                        <ul>
+                                             <i><b><a href="ho.html" target="content" id="ro">HOME</a></b></i>
+                                            <i><b><a href="about%20us.html" target="content" id="ro">ABOUTUS</a></b></i>
+                                            <i><b><a href="contactus.html" target="content" id="so">CONTACTUS</a></b></i>
+                                            <i><b><a href="singup.html" target="content" id="ro">SINGUP</a></b></i>
+                                             <i><b><a href="login.html" target="content" id="ro">LOGIN</a></b></i>
+                                            </ul>
+
+                                            
+                                        
+                                     
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        </td></tr>
+                            
+                            </tbody>
+                                
+                                
+                                
+                                </table>        
+                        
+                                
+                            </td>
+                            
+                            </tr>
+                        
+                        </tbody>
+                        </table>
+                    </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+        <div align="center">
+            <iframe src="nav.html" s name="nav" height="500px" width="300"px style="background-image:url(e-books.jpg)">
+            
+            </iframe>
+            <iframe name="content" height="500px" width="1020px" style="background-image:url(pack2.jpg)">
+            </iframe>
+        </div>
+        <div align="center">
+            <table height="40" width="1400" bgcolor="#DC4547">
+                <tbody>
+                    <tr><td><marquee><i><font size="+2">Subhadeep</font></i></marquee></td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+                   
+       
+    </body>
+</html>
